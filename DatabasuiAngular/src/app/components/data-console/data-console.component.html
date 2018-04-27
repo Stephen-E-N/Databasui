@@ -1,19 +1,120 @@
+<div class="input-group">
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="inputGroupFile04">
+    <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
+  </div>
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+  </div>
+</div>
 <div class="row" style="margin-left: 15px; margin-right: 15px">
-  <div class="col-lg-9">
+  <!-- <div class="col-lg-2">
+    <label class="control-label">SORT BY</label>
+    <div class="list-group">
+      <a href="#" class="list-group-item">COLUMN 1</a>
+      <a href="#" class="list-group-item">COLUMN 2</a>
+      <a href="#" class="list-group-item">COLUMN 3</a>
+      <a href="#" class="list-group-item">COLUMN 4</a>
+    </div>
+  </div> -->
+  <div class="col-lg-10">
     <label class="control-label">DATA CONSOLE</label>
-    <div class="well text-center" style="height: 100%">
-      <ul class="nav nav-tabs">
-        <li class="active" style="width: 50%">
+    <div align="center" class="well" style="height: 100%">
+      <ul class="nav nav-tabs text-center">
+        <li style="width: 50%">
           <a aria-expanded="true" href="#home" data-toggle="tab">Table</a>
         </li>
-        <li class="" style="width: 50%">
+        <li style="width: 50%">
           <a aria-expanded="false" href="#profile" data-toggle="tab">Visual</a>
+        </li>
+      </ul>
+      <br>
+      <br>
+      <table class="table table-striped table-hover ">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>House</th>
+            <th>Sigil</th>
+            <th>Seat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Stark</td>
+            <td>Direwolf</td>
+            <td>Winterfell</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Lannister</td>
+            <td>Lion</td>
+            <td>Casterly Rock</td>
+          </tr>
+          <tr class="info">
+            <td>3</td>
+            <td>Baratheon</td>
+            <td>Stag</td>
+            <td>Storm's End</td>
+          </tr>
+          <tr class="success">
+            <td>4</td>
+            <td>Targaryen</td>
+            <td>3-headed Dragon</td>
+            <td>Slaver's Bay</td>
+          </tr>
+          <tr class="danger">
+            <td>5</td>
+            <td>Martell</td>
+            <td>Sun pierced by a spear</td>
+            <td>Sunspear</td>
+          </tr>
+          <tr class="warning">
+            <td>6</td>
+            <td>Tully</td>
+            <td>Trout</td>
+            <td>Riverrun</td>
+          </tr>
+          <tr class="active">
+            <td>7</td>
+            <td>Bolton</td>
+            <td>Red flayed man</td>
+            <td>Dreadfort / Winterfell</td>
+          </tr>
+        </tbody>
+      </table>
+      <ul class="pagination">
+        <li class="disabled">
+          <a href="#">«</a>
+        </li>
+        <li class="active">
+          <a href="#">1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">4</a>
+        </li>
+        <li>
+          <a href="#">»</a>
         </li>
       </ul>
     </div>
   </div>
-  <div class="col-lg-3">
-    <form class="bs-component">
+  <div class="col-sm-2">
+    <label class="control-label">CONTROL PANEL</label>
+    <div class="list-group">
+      <a id="select" onclick="javascript:scrollView()" routerLink="modal/1" class="list-group-item">SELECT</a>
+      <a id="insert" routerLink="modal/2" class="list-group-item">INSERT</a>
+      <a id="update" routerLink="modal/3" class="list-group-item">UPDATE</a>
+      <a id="delete" routerLink="modal/4" class="list-group-item">DELETE</a>
+    </div>
+    <!-- <form class="bs-component">
       <div class="form-group">
         <div class="input-group">
           <span>
@@ -42,6 +143,13 @@
           <input class="form-control" type="text">
         </div>
       </div>
-    </form>
+    </form> -->
   </div>
 </div>
+<br>
+<br>
+<div class="col-sm-1"></div>
+<div class="col-lg-10" style="margin-left: 15px; margin-right: 15px; width: 100%">
+  <router-outlet></router-outlet>
+</div>
+<div class="col-sm-1"></div>
