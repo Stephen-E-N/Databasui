@@ -1,0 +1,84 @@
+<div *ngIf="id == 1" class="panel panel-primary text-center" style="width: 100%">
+    <div class="panel-heading">
+        <h3 class="panel-title">SELECT QUERY</h3>
+    </div>
+    <div class="panel-body">
+        <div class="col-lg-12">
+            <div class="well well-sm">
+                <button>hi</button>
+            </div>
+        </div>
+        <br>
+        <form class="bs-component">
+            <div class="form-group">
+                <div class="col-md-6">
+                    <label for="select" class="control-label">SELECT: </label>
+                    <select id="selectColumn" multiple="" class="form-control">
+                        <option>*</option>
+                        <option>COLUMN 1</option>
+                        <option>COLUMN 2</option>
+                        <option>COLUMN 3</option>
+                        <option>COLUMN 4</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="select" class="control-label">FROM TABLE(S): </label>
+                    <select multiple="" class="form-control">
+                        <option>ALL</option>
+                        <option>TABLE 1</option>
+                        <option>TABLE 2</option>
+                        <option>TABLE 3</option>
+                        <option>TABLE 4</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <br>
+                    <label for="select" class="control-label">WHERE: </label><br>
+                    <div class="col-md-4">
+                        <select class="form-control" id="select">
+                            <option>COLUMN 1</option>
+                            <option>COLUMN 2</option>
+                            <option>COLUMN 3</option>
+                            <option>COLUMN 4</option>
+                            <option>COLUMN 5</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-control" id="select">
+                            <option>></option>
+                            <option>
+                                <</option>
+                                    <option>>=</option>
+                                    <option>
+                                        <=</option>
+                                            <option>IS NULL</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <input class="form-control" id="focusedInput" value="This is focused..." type="text">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div *ngIf="id == 2" class="panel panel-primary text-center" style="width: 100%">
+    <div class="panel-heading">
+        <h3 class="panel-title">INSERT QUERY</h3>
+    </div>
+    <div class="panel-body">Buttons</div>
+</div>
+<div *ngIf="id == 3" class="panel panel-primary text-center" style="width: 100%">
+    <div class="panel-heading">
+        <h3 class="panel-title">UPDATE QUERY</h3>
+    </div>
+    <div class="panel-body">Buttons</div>
+</div>
+<div *ngIf="id == 4" class="panel panel-primary text-center" style="width: 100%">
+    <div class="panel-heading">
+        <h3 class="panel-title">DELETE QUERY</h3>
+    </div>
+    <div class="panel-body">Buttons</div>
+</div>
+
+
