@@ -1,0 +1,12 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost/Home
+eureka:
+  client:
+    register-with-eureka: false
+graphql:
+  servlet:
+    mapping: /graphql
+    enabled: true
+    corsEnabled: true

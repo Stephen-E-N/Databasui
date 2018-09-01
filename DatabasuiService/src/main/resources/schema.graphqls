@@ -1,0 +1,32 @@
+type Datamap {
+  id: ID!
+  dataCategory: Category!
+  data: String!
+  dataSize: Int!
+  timeAdded: DateTime!
+  timeUpdated: DateTime!
+}
+
+type Category {
+	id: ID!
+	dataCategory: String!
+}
+
+type Query {
+  	allDatamaps: [Datamap]
+}
+
+type Mutation {
+    createDatamap(dataCategoryId: ID, data: String!, dataSize: Int!): Datamap
+    updateDatamap(id: ID, dataCategoryId: ID, data: String!, dataSize: Int!): Datamap
+    deleteDatamap(id: ID): Datamap
+    createCategory(dataCategory: String!): Category
+    updateCategory(id: ID, dataCategory: String!): Category
+    deleteDatamap(id: ID): Category
+}
+
+schema {
+  	query: Query
+}
+
+scalar DateTime
